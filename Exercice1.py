@@ -1,10 +1,12 @@
-print(" how many people need a ride?")
-x = int(input())
-print("Ask the user how many people can fit in one tax?")
-y = int(input())
+print ("Please enter your name: ")
+name = str(input())
 
-if x % y == 0:
-    print("You will need", x // y, "taxi(s) to transport", x, "people.")
-
+if name == "VIP":
+    print("Enjoy the show for free!")
 else:
-    print("You will need", x // y + 1, "taxi(s) to transport", x, "people.")
+    print ("How many tickets would you like to buy?")
+    tickets = int(input())  
+    ticket_price = 15.5  
+    total_cost = tickets * ticket_price  
+    print("The total cost is:", total_cost)
+    
